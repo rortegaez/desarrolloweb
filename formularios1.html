@@ -6,29 +6,46 @@
     </head>
     <body>
         <h1>Formulario de registro</h1>
-        <form>
+        <form action="" method="get">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" maxlength="50" />
+            <!-- 'maxlength' es para poner el máximo de caracteres que se pueden poner-->
             <br><br>
             <label for="apellidos">Apellidos:</label>
-            <input type="text" name="apellidos">
+            <input type="text" name="apellidos" maxlength="50" />
             <br><br>
             <label for="sexo">Sexo:</label>
-            <input type="radio" name="sexo" value="hombre">
+            <input type="radio" name="sexo" value="hombre" />
             <label for="hombre">Hombre</label>
-            <input type="radio" name="sexo" value="mujer">
+            <input type="radio" name="sexo" value="mujer" />
             <label for="mujer">Mujer</label>
             <br><br>
             <label for="email">Correo:</label>
-            <input type="email"/>
+            <input type="email" name="email"/>
             <br><br>
-            <input type="checkbox" name="inf" value="inf">
+            <!--no se pone 'input' para no crear la etiqueta de enviar-->
+            <label for="poblacion">Población:</label>
+            <select name="poblacion">
+                <option value="Alicante">Alicante</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Valencia">Valencia</option>
+            </select>
+            <br><br>
+            <label for="descripcion">Descripción:</label>
+            <textarea name="descripcion" row="6" cols="60"></textarea>
+            <!-- 'textarea' se utiliza para poner un cuadro de texto-->
+            <br><br>
+            <input type="checkbox" name="inf" value="inf" checked="checked" />
+            <!-- 'checked' es para que la casilla aparezca de principio marcada-->
             <label for="inf">Deseo recibir información sobre novedades y ofertas</label>
             <br><br>
-            <input type="checkbox" name="dcl" value="dcl">
+            <input type="checkbox" name="dcl" value="dcl" />
             <label for="dcl">Declaro haber leído y aceptar las condiciones generales
                 del programa y la normativa sobre protección de datos
             </label>
+            <br><br>
+            <button>Enviar</button>
         </form>
     </body>
 </html>
