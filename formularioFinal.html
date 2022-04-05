@@ -7,7 +7,54 @@
     <body>
         <form action="" method="get">
             <lable for="nombre">Nombre:</lable>
-            <input type="text" name="nombre" />
+            <input type="text" name="nombre" autofocus="autofocus" />
+            <br><br>
+
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo" />
+            <br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" name="url" placeholder="Escribe URL de tu página web personal" />
+            <br><br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" />
+            <br><br>
+
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" name="tiempo" />
+            <br><br>
+
+            <label for="fyh">Fecha y Hora:</label>
+            <input type="datetime" name="fyh" />
+            <br><br>
+
+            <label for="mes">Mes:</label>
+            <input type="month" name="mes" />
+            <br><br>
+
+            <label for="semana">Semana:</label>
+            <input type="week" name="semana" />
+            <br><br>
+
+            <label for="numero">Número (min -10, max 10):</label>
+            <input type="number" name="numero" min="-10" max="10" step="1" />
+            <br><br>
+
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="tel" />
+            <br><br>
+
+            <label for="busqueda">Terminos de busquedas:</label>
+            <input type="search" name="busqueda" />
+            <br><br>
+
+            <label for="color">Color favorito:</label>
+            <input type="color" name="color" />
+            <br><br>
+
+            <input type="submit" value="Enviar" />
         </form>
     </body>
 </html>
