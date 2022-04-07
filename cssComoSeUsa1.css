@@ -1,2 +1,23 @@
 /*Document CSS*/
 
+/* Style body */
+body{
+    font-size: 16px;
+    background-color: #CFC;
+    font-family: Georgia, Cambria, serif;
+    color: #00F;
+}
+
+/* Style h1 */
+h1{
+    color: #F00;
+    font-family: Verdana, calibri, sans-serif;
+    font-size: 32px;
+}
+
+/* Style h2 */
+h2{
+    color: #A00;
+    font-family: Verdana, calibri, sans-serif;
+    font-size: 24px;
+}
