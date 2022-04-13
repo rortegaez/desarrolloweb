@@ -9,12 +9,23 @@
             }
             h1, h2{
                 text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            legend, label{
+                font-weight: bold;
             }
             h3{
                 width: 100%;
             }
             form{
                 padding-left: 5%;
+            }
+            button{
+                margin: 20px;
+                padding: 15px;
+            }
+            .center{
+                text-align: center;
             }
         </style>
     </head>
@@ -76,6 +87,31 @@
                         <input type="password" name="pass" /><br><br>
                     </form>
             </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>CONDICIONES DE REGISTRO</h3>
+                </legend>
+                    <form>
+                        <label for="deseo">Deseo recibir información de iDESWEB</label><br>
+                        <input type="radio" name="deseo" value="Una vez al día" />
+                        <label for="deseo">Una vez al día</label>
+                        <input type="radio" name="deseo" value="Una vez a la semana" />
+                        <label for="deseo">Una vez a la semana</label>
+                        <input type="radio" name="deseo" value="Una vez al mes" />
+                        <label for="deseo">Una vez al mes</label>
+                        <br><br>
+
+                        <input type="radio" name="acepto" value="acepto el acuerdo" />
+                        <label for="acepto">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración
+                            de privacidad y la declaración de uso de sus cookies"
+                        </label>
+                    </form>
+            </fieldset>
+            
+            <div class="center">
+                <button>Crear cuenta</button>
+            </div>
 
         </main>        
 
