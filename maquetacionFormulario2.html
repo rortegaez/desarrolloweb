@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Maquetacion formulario part 2</title>
+        <style>
+            body{
+                width: 1000px;
+                margin: 0%;
+                padding: 8%;
+            }
+            div{
+                background-color: beige;
+                border-top: 1px solid grey;
+            }
+            h2{
+                background-color: blue;
+                margin-left: 50px;
+                width: 250px;
+            }
+            .class{
+                text-align: right;
+                width: auto;
+            }
+            .boton{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario de registro</h1>
+        </header>
+
+        <main>
+            <form action="" method="post">
+
+                <div>
+
+                    <h2>Nombre y apellidos</h2>
+                
+                    <p>
+                        <input type="text" name="nombre" id="nombre" />
+                        <label for="nombre">Nombre</label>
+
+                        <input type="text" name="primerA" id="primerA" />
+                        <label for="primerA">Primer apellido</label>
+
+                        <input type="text" name="segundoA" id="segundoA" />
+                        <label for="segundoA">Segundo apellido</label>
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h2>Dirección</h2>
+
+                    <p>
+                        <input type="text" name="direccion" id="direccion" />
+                        <label for="direccion">Calle, número, piso, puerta</label>
+
+                        <input type="text" name="postal" id="postal" />
+                        <label for="postal">Codigo postal</label>
+
+                        <input type="text" name="municipio" id="municipio" />
+                        <label for="municipio">Municipio</label>
+
+                        <select name="provincia" id="provincia">
+                            <option>Málaga</option>
+                            <option>Cordoba</option>
+                            <option>Cádiz</option>
+                            <option>Granada</option>
+                            <option>Huelva</option>
+                        </select>
+                        <label for="provincia">Provincia</label>
+
+                        <select name="pais" id="pais">
+                            <option>España</option>
+                            <option>Portugal</option>
+                            <option>Francia</option>
+                            <option>Alemania</option>
+                            <option>Italia</option>
+                        </select>
+                        <label for="pais">Pais</label>
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h2>Email</h2>
+
+                    <input type="email" name="mail" id="mail" />
+
+                </div>
+
+                <div>
+
+                    <h2>Teléfono</h2>
+
+                    <input type="tel" name="telfijo" id="telfijo" />
+                    <label for="telfijo">Fijo</label>
+
+                    <input type="tel" name="telmovil" id="telmovil" />
+                    <label for="telmovil">Móvil</label>
+
+                </div>
+
+                <div class="boton">
+                    <input type="submit" value="Registrarse" id="registrarse" />
+                </div>
+
+            </form>
+            <p>
+
+            </p>
+        </main>
+
+    </body>
+</html>

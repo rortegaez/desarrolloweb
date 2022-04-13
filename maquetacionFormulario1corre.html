@@ -24,6 +24,14 @@
             .centrado{
                 text-align: center;
             }
+            /*seleccionamos la etiqueta input y select, e indicamos como
+            actuar cuando el ratón esta encima*/
+            input:focus, select:focus{
+                background-color: yellow;
+            }
+            input:hover, select:hover{
+                background-color: red;
+            }
 
         </style>
     </head>
@@ -114,8 +122,9 @@
                     </p>
                 </fieldset>
 
+                <p class="centrado">
                 <input type="submit" value="Crear cuenta" id="boton-crear" />
-                
+                </p>
 
             </form>
         </main>
