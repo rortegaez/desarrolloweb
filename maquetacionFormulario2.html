@@ -12,16 +12,20 @@
             div{
                 background-color: beige;
                 border-top: 1px solid grey;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-bottom: 25px;
             }
             h2{
                 background-color: blue;
                 width: 250px;
             }
-            .class{
+            .boton{
                 text-align: right;
                 width: auto;
             }
             .boton{
+                padding-top: 15px;
                 text-align: right;
             }
             fieldset{
@@ -36,6 +40,18 @@
                 border-left: 0px;
                 border-right: 0px;
                 border-bottom: 2px solid black;
+            }
+            #registrarse{
+                border: 0px;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+            }
+            #direccion{
+                width: 450px;
+            }
+            #mail{
+                width: 400px;
             }
         </style>
     </head>
@@ -52,13 +68,13 @@
                     <legend><h2>Nombre y apellidos</h2></legend>
                         
                     <p>
-                        <input type="text" name="nombre" id="nombre" />
-                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" /><br>
+                        <label for="nombre">Nombre</label><br><br>
 
-                        <input type="text" name="primerA" id="primerA" />
-                        <label for="primerA">Primer apellido</label>
+                        <input type="text" name="primerA" id="primerA" /><br>
+                        <label for="primerA">Primer apellido</label><br><br>
 
-                        <input type="text" name="segundoA" id="segundoA" />
+                        <input type="text" name="segundoA" id="segundoA" /><br>
                         <label for="segundoA">Segundo apellido</label>
                     </p>
                     </fieldset>
@@ -70,8 +86,8 @@
                     <h2>Dirección</h2>
 
                     <p>
-                        <input type="text" name="direccion" id="direccion" />
-                        <label for="direccion">Calle, número, piso, puerta</label>
+                        <input type="text" name="direccion" id="direccion" /><br>
+                        <label for="direccion">Calle, número, piso, puerta</label><br><br>
 
                         <input type="text" name="postal" id="postal" />
                         <label for="postal">Codigo postal</label>
@@ -113,10 +129,10 @@
                     <h2>Teléfono</h2>
                     
                     <p>
-                    <input type="tel" name="telfijo" id="telfijo" />
+                    <input type="tel" name="telfijo" id="telfijo" /><br>
                     <label for="telfijo">Fijo</label>
 
-                    <input type="tel" name="telmovil" id="telmovil" />
+                    <input type="tel" name="telmovil" id="telmovil" /><br>
                     <label for="telmovil">Móvil</label>
                     </p>
 
