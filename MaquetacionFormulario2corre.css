@@ -1,0 +1,117 @@
+/*Document CSS*/
+/*Características generales del cuerpo*/
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #AAA;
+}
+/*Definimos las caracteristicas generales del bloque contenedor*/
+#contenedor{
+    background: #FFF;
+    margin: 1em auto;
+    padding: 1em;
+    width: 800px;
+}
+/*Como hemos hecho el furmulario como una lista, debemos de quitarle los puntos, margin y padding*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*Le damos un formato a cada li, que corresponde a cada uno de los bloques que debemos de separar
+hidden, le indicamos que sucede si el contenido excede el contenedor*/
+ul li{
+    border-top: 1px solid #CCC;
+    margin: 1em 0;
+    padding: 1em;
+    width: auto;
+    overflow: hidden;
+}
+/*con la etiqueta label.titulo, hemos indicado que el resto debe de ir a la izquierda (float: left) */
+ul li label.titulo{
+    float: left;
+    width: 150px;
+    text-align: right;
+}
+/*Ahora le damos el margin a div.controles para separarlo de titulo*/
+ul li div.controles{
+    margin-left: 160px;
+}
+/*Ahora vamos a crear el boton de registrarse*/
+ul li.botones{
+    border-top: 2px solid #CCC;
+    clear: both;
+    float: none;
+    padding: 1em 0;
+    text-align: right;
+    width: 100%;
+}
+/*Hay que hacerlo separado con la orden anterios, porque la orden anterior, modificamos el bloque y con esta solo modificamos la letra dentro del input*/
+ul li.botones input{
+    font-size: 18px;
+}
+/*Damos negrita a la etiqueta titulo*/
+ul li label.titulo{
+    font-weight: bold;
+}
+/*donde hay espacio, se ha colocado la etiqueta span a la izquierda de la otra etiqueta span*/
+ul li div span{
+    float: left;
+    padding: 0.3em 0;
+}
+/*las etiquetas span.completo le hemos dicho que ocupen todo el espacio posible*/
+ul li div span.completo{
+    width: 100%;
+}
+ul li div span.mitad{
+    width: 50%;
+}
+ul li div span.tercio{
+    width: 33%;
+}
+ul li div span.dostercios{
+    width: 66%;
+}
+/*como le hemos dado un valor de block, se tratan como un bloque y deben de desplazarse a la siguiente línea*/
+ul li div span label{
+    display: block;
+    font-size: 12px;
+    color: #333;
+}
+/*mayor tamaño a los espacio para poner datos*/
+ul li input{
+    padding: 0.2em;
+}
+/*asignando ancho a los diferentes input*/
+input#apellido1, input#apellido2, input#direccion, input#email{
+    width: 260px;
+}
+input#codigopostal{
+    widows: 80px;
+}
+select#provincia{
+    width: 90px;
+}
+select#pais{
+    width: 150px;
+}
+input#telefonofijo, input#telefonomovil{
+    width: 135px;
+}
+/*configuracion color cuando ratón o teclado esta sobre los diferentes objetos*/
+ul li:hover{
+    background-color: #FF9;
+}
+ul li.botones:hover{
+    background-color: transparent;
+}
+ul li input, ul li select{
+    border: 2px solid transparent;
+    border-bottom: 2px solid black;
+}
+ul li.botones input{
+    border: 2px solid #CCC;
+}
+ul li input:focus, ul li select:focus{
+    border: 2px solid #F00;
+}

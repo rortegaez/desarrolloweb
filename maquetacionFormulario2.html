@@ -45,7 +45,7 @@
                 border-bottom: 2px solid black;
             }
             input:focus{
-                border-color: blueviolet;
+                border-color: blueviolets;
             }
             #registrarse{
                 border: 0px;
@@ -101,21 +101,24 @@
                         <input type="text" name="municipio" id="municipio" />
                         <label for="municipio">Municipio</label>
 
+                        <!-- hay que incluir el valor value a cada una de las opciones-->
                         <select name="provincia" id="provincia">
-                            <option>Málaga</option>
-                            <option>Cordoba</option>
-                            <option>Cádiz</option>
-                            <option>Granada</option>
-                            <option>Huelva</option>
+                            <option value=""></option>
+                            <option value="malaga">Málaga</option>
+                            <option value="cordoba">Cordoba</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="granada">Granada</option>
+                            <option value="huelva">Huelva</option>
                         </select>
                         <label for="provincia">Provincia</label>
 
                         <select name="pais" id="pais">
-                            <option>España</option>
-                            <option>Portugal</option>
-                            <option>Francia</option>
-                            <option>Alemania</option>
-                            <option>Italia</option>
+                            <option value=""></option>
+                            <option value="espanha">España</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="francia">Francia</option>
+                            <option value="alemania">Alemania</option>
+                            <option value="italia">Italia</option>
                         </select>
                         <label for="pais">Pais</label>
                     </p>
@@ -126,7 +129,8 @@
 
                     <h2>Email</h2>
                     <p>
-                    <input type="email" name="mail" id="mail" />
+                        <!--hay que incluir la opción de value-->
+                    <input type="email" name="mail" id="mail" value="" />
                     </p>
                 </div>
 
@@ -135,10 +139,11 @@
                     <h2>Teléfono</h2>
                     
                     <p>
-                    <input type="tel" name="telfijo" id="telfijo" /><br>
+                        <!--hay que incluir la opción de value-->
+                    <input type="tel" name="telfijo" id="telfijo" value="" /><br>
                     <label for="telfijo">Fijo</label>
 
-                    <input type="tel" name="telmovil" id="telmovil" /><br>
+                    <input type="tel" name="telmovil" id="telmovil" value="" /><br>
                     <label for="telmovil">Móvil</label>
                     </p>
 
