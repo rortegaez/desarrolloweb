@@ -12,23 +12,16 @@
             div{
                 background-color: beige;
                 border-top: 1px solid grey;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                padding-bottom: 25px;
-            }
-            div:hover{
-                background-color: red;
             }
             h2{
                 background-color: blue;
                 width: 250px;
             }
-            .boton{
+            .class{
                 text-align: right;
                 width: auto;
             }
             .boton{
-                padding-top: 15px;
                 text-align: right;
             }
             fieldset{
@@ -43,21 +36,6 @@
                 border-left: 0px;
                 border-right: 0px;
                 border-bottom: 2px solid black;
-            }
-            input:focus{
-                border-color: blueviolets;
-            }
-            #registrarse{
-                border: 0px;
-                font-size: 20px;
-                font-weight: bold;
-                padding: 10px;
-            }
-            #direccion{
-                width: 450px;
-            }
-            #mail{
-                width: 400px;
             }
         </style>
     </head>
@@ -74,13 +52,13 @@
                     <legend><h2>Nombre y apellidos</h2></legend>
                         
                     <p>
-                        <input type="text" name="nombre" id="nombre" /><br>
-                        <label for="nombre">Nombre</label><br><br>
+                        <input type="text" name="nombre" id="nombre" />
+                        <label for="nombre">Nombre</label>
 
-                        <input type="text" name="primerA" id="primerA" /><br>
-                        <label for="primerA">Primer apellido</label><br><br>
+                        <input type="text" name="primerA" id="primerA" />
+                        <label for="primerA">Primer apellido</label>
 
-                        <input type="text" name="segundoA" id="segundoA" /><br>
+                        <input type="text" name="segundoA" id="segundoA" />
                         <label for="segundoA">Segundo apellido</label>
                     </p>
                     </fieldset>
@@ -92,8 +70,8 @@
                     <h2>Dirección</h2>
 
                     <p>
-                        <input type="text" name="direccion" id="direccion" /><br>
-                        <label for="direccion">Calle, número, piso, puerta</label><br><br>
+                        <input type="text" name="direccion" id="direccion" />
+                        <label for="direccion">Calle, número, piso, puerta</label>
 
                         <input type="text" name="postal" id="postal" />
                         <label for="postal">Codigo postal</label>
@@ -101,24 +79,21 @@
                         <input type="text" name="municipio" id="municipio" />
                         <label for="municipio">Municipio</label>
 
-                        <!-- hay que incluir el valor value a cada una de las opciones-->
                         <select name="provincia" id="provincia">
-                            <option value=""></option>
-                            <option value="malaga">Málaga</option>
-                            <option value="cordoba">Cordoba</option>
-                            <option value="cadiz">Cádiz</option>
-                            <option value="granada">Granada</option>
-                            <option value="huelva">Huelva</option>
+                            <option>Málaga</option>
+                            <option>Cordoba</option>
+                            <option>Cádiz</option>
+                            <option>Granada</option>
+                            <option>Huelva</option>
                         </select>
                         <label for="provincia">Provincia</label>
 
                         <select name="pais" id="pais">
-                            <option value=""></option>
-                            <option value="espanha">España</option>
-                            <option value="portugal">Portugal</option>
-                            <option value="francia">Francia</option>
-                            <option value="alemania">Alemania</option>
-                            <option value="italia">Italia</option>
+                            <option>España</option>
+                            <option>Portugal</option>
+                            <option>Francia</option>
+                            <option>Alemania</option>
+                            <option>Italia</option>
                         </select>
                         <label for="pais">Pais</label>
                     </p>
@@ -129,8 +104,7 @@
 
                     <h2>Email</h2>
                     <p>
-                        <!--hay que incluir la opción de value-->
-                    <input type="email" name="mail" id="mail" value="" />
+                    <input type="email" name="mail" id="mail" />
                     </p>
                 </div>
 
@@ -139,11 +113,10 @@
                     <h2>Teléfono</h2>
                     
                     <p>
-                        <!--hay que incluir la opción de value-->
-                    <input type="tel" name="telfijo" id="telfijo" value="" /><br>
+                    <input type="tel" name="telfijo" id="telfijo" />
                     <label for="telfijo">Fijo</label>
 
-                    <input type="tel" name="telmovil" id="telmovil" value="" /><br>
+                    <input type="tel" name="telmovil" id="telmovil" />
                     <label for="telmovil">Móvil</label>
                     </p>
 

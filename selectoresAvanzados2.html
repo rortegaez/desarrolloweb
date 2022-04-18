@@ -4,8 +4,13 @@
 <meta charset="utf-8" />
 <title>Ejemplo de selectores avanzados</title>
 <style>
+  /*table{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
     tr:first-child{
         background-color: rgb(174, 215, 238);
+        font-weight: bold;
     }
     th.euro, th.dolar, th.libra, th.yen{
        background-color: rgb(83, 161, 224);
@@ -14,9 +19,56 @@
    }
    th, td{
        border: 1px solid black;
+       padding: 0.8em;
    }
    tr:nth-child(2){
-     background-color: red;
+     background-color: yellowgreen;
+   }
+   tr:nth-child(4){
+     background-color: yellowgreen;
+   }
+   tr:hover{
+     background-color: #FFFF66;
+   }*/
+   table{
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+   }
+   table, tr, th, td{
+     border: 1px solid #333;
+     line-height: 2em;
+   }
+   th{
+     background-color: #f5f5f5;
+   }
+   td{
+     padding: 0 .3em;
+   }
+   th.euro{
+     background: #e6f3ff /*url(imagenes/euro.png) no-repeat left center, esto es para incluir una imagen*/;
+     padding: 0 .3em 0 1.2em;
+   }
+   th.dolar{
+     background: #e6f3ff /*url(imagenes/euro.png) no-repeat left center, esto es para incluir una imagen*/;
+     padding: 0 .3em 0 1.2em;
+   }
+   th.libra{
+     background: #e6f3ff /*url(imagenes/euro.png) no-repeat left center, esto es para incluir una imagen*/;
+     padding: 0 .3em 0 1.2em;
+   }
+   th.yen{
+     background: #e6f3ff /*url(imagenes/euro.png) no-repeat left center, esto es para incluir una imagen*/;
+     padding: 0 .3em 0 1.2em;
+   }
+   tr:nth-child(n+1) td{
+     text-align: right;
+   }
+   tr:nth-child(2n){
+     background-color: #ffffcc;
+   }
+   tr:hover{
+     background: #ffff66 
+     ;
    }
 </style>
 </head>
