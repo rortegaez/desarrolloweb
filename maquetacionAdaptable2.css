@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    
+}
+@media screen and (min-width:601px) and (max-width:1200px) {
+    .datos{
+        float: left;
+        width: 40%;
+    }
+    .libro{
+        display: block;
+        width: 60%;
+        float: left;
+    }
+    .contenido li{
+        list-style: none;
+        float: left;
+        width: 30%;
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width:1201){
+
+}

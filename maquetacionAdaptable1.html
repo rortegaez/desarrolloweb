@@ -4,7 +4,43 @@
         <meta charset="utf-8" />
         <title>Curriculum Vitae de Bruce Wayne</title>
         <style>
-
+            .formacion li, .experiencia li{
+                color: blue;
+            }
+            .formacion li strong, .experiencia li strong{
+                color: black;
+            }
+            @media screen and (max-width:600px) {
+                ul{
+                    border-top: 1px solid grey;
+                }
+                ul{
+                    list-style: none;
+                }
+            }
+            @media screen and (min-width:1201px){
+                div{
+                    float: left;
+                    width: 33%;
+                }                
+            }
+            @media screen and (min-width:601px) and (max-width:1200px) {
+                .personales{
+                    float: left;
+                    width: 30%;
+                    /*height: 800px;*/
+                }
+                .personales li strong{
+                    display: block;
+                }
+                .personales ul{
+                    list-style: none;
+                }
+                .formacion, .experiencia{
+                    float: left;
+                    width: 70%;
+                }
+            }    
 
         </style>
     </head>
